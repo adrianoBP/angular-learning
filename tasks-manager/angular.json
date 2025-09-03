@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-learning": {
+    "tasks-manager": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -53,10 +53,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular-learning:build:production"
+              "buildTarget": "tasks-manager:build:production"
             },
             "development": {
-              "buildTarget": "angular-learning:build:development"
+              "buildTarget": "tasks-manager:build:development"
             }
           },
           "defaultConfiguration": "development"
