@@ -6,4 +6,4 @@ import { Component } from '@angular/core';
   templateUrl: './button.html',
   styleUrl: './button.css',
 })
-export class Button {}
+export class ButtonComponent {}

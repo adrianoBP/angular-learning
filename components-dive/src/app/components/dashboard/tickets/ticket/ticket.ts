@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-ticket',
   imports: [],
   templateUrl: './ticket.html',
-  styleUrl: './ticket.css'
+  styleUrl: './ticket.css',
 })
-export class Ticket {
-
-}
+export class TicketComponent {}
