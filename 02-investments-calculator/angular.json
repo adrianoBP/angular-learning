@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "tasks-manager": {
+    "02-investments-calculator": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -14,12 +14,12 @@
           "builder": "@angular/build:application",
           "options": {
             "browser": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/assets"
+              {
+                "glob": "**/*",
+                "input": "public"
+              }
             ],
             "styles": [
               "src/styles.css"
@@ -53,10 +53,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "tasks-manager:build:production"
+              "buildTarget": "02-investments-calculator:build:production"
             },
             "development": {
-              "buildTarget": "tasks-manager:build:development"
+              "buildTarget": "02-investments-calculator:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -67,13 +67,12 @@
         "test": {
           "builder": "@angular/build:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              "src/assets"
+              {
+                "glob": "**/*",
+                "input": "public"
+              }
             ],
             "styles": [
               "src/styles.css"

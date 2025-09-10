@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "lifecycles-dive": {
+    "01-tasks-manager": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -14,12 +14,12 @@
           "builder": "@angular/build:application",
           "options": {
             "browser": "src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/assets"
             ],
             "styles": [
               "src/styles.css"
@@ -53,10 +53,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "lifecycles-dive:build:production"
+              "buildTarget": "01-tasks-manager:build:production"
             },
             "development": {
-              "buildTarget": "lifecycles-dive:build:development"
+              "buildTarget": "01-tasks-manager:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -67,12 +67,13 @@
         "test": {
           "builder": "@angular/build:karma",
           "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/assets"
             ],
             "styles": [
               "src/styles.css"

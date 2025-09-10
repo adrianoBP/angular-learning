@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "components-dive": {
+    "06-directives-dive": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -53,10 +53,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "components-dive:build:production"
+              "buildTarget": "06-directives-dive:build:production"
             },
             "development": {
-              "buildTarget": "components-dive:build:development"
+              "buildTarget": "06-directives-dive:build:development"
             }
           },
           "defaultConfiguration": "development"

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "investments-calculator": {
+    "04-lifecycles-dive": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -53,10 +53,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "investments-calculator:build:production"
+              "buildTarget": "04-lifecycles-dive:build:production"
             },
             "development": {
-              "buildTarget": "investments-calculator:build:development"
+              "buildTarget": "04-lifecycles-dive:build:development"
             }
           },
           "defaultConfiguration": "development"

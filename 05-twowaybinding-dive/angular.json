@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "directives-dive": {
+    "05-twowaybinding-dive": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -53,10 +53,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "directives-dive:build:production"
+              "buildTarget": "05-twowaybinding-dive:build:production"
             },
             "development": {
-              "buildTarget": "directives-dive:build:development"
+              "buildTarget": "05-twowaybinding-dive:build:development"
             }
           },
           "defaultConfiguration": "development"

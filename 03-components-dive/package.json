@@ -1,5 +1,5 @@
 {
-  "name": "tasks-manager",
+  "name": "03-components-dive",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -29,8 +29,7 @@
     "@angular/platform-browser": "^20.1.0",
     "@angular/router": "^20.1.0",
     "rxjs": "~7.8.0",
-    "tslib": "^2.3.0",
-    "zone.js": "~0.15.0"
+    "tslib": "^2.3.0"
   },
   "devDependencies": {
     "@angular/build": "^20.1.6",
